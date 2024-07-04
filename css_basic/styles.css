@@ -1,3 +1,6 @@
+:root {
+  --color-a: bisque;
+}
 body{
   display: flex;
   flex-direction:column   ;
@@ -6,17 +9,44 @@ body{
 } 
 main{
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   flex: auto;
+
 }
 article {
   flex: 2;
+  background-color: var(--color-a);
 }
 aside {
-   flex: 1;
+  flex: 1;
   overflow-y: auto;
+  background-color: antiquewhite;
 }
   
 article{
   overflow-y: auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+}
+img {
+  width: 10vh;
+  height: 10vh;
+  transform: rotateY(180deg);}
+a {
+  text-decoration: none;
+  color : #000
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  /* color: darkcyan; */
+}
+.line-hight {
+  line-height: 1.5;
+  background: image('pngegg.png');
+  letter-spacing: 0.1rem;
+  
 }
